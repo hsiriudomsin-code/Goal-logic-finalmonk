@@ -24,7 +24,25 @@ ACCOUNTS = {
 "GUEST": "FREE",
 "Man Utd": "MUFC@Scout",
 "Man City": "MCFC@Etihad",
-"Liverpool": "LFC@Anfield"
+"Liverpool": "LFC@Anfield",
+"Arsenal": "AFC@Gunners",
+"Chelsea": "CFC@Blues",
+"Spurs": "THFC@London",
+"Newcastle": "NUFC@Magpies",
+"Aston Villa": "AVFC@Villa",
+"Brighton": "BHAFC@Seagulls",
+"West Ham": "WHUFC@Irons",
+"Wolves": "WWFC@Wolves",
+"Fulham": "FFC@Cottage",
+"Bournemouth": "AFCB@Cherries",
+"Crystal Palace": "CPFC@Eagles",
+"Brentford": "BFC@Bees",
+"Everton": "EFC@Toffees",
+"Nottm Forest": "NFFC@Forest",
+"Ipswich Town": "ITFC@Tractor",
+"Southampton": "SFC@Saints",
+"Leicester City": "LCFC@Foxes"
+    
 }
 
 # --- LOGO ---
@@ -289,7 +307,7 @@ if check_login():
                                   font=dict(color="white"))
                 st.plotly_chart(fig, use_container_width=True)
 
-            ALLOWED_MOTM = ["FIFA_ADMIN", "Man Utd", "Man City", "Liverpool"]
+            ALLOWED_MOTM = ["FIFA_ADMIN", "Man Utd", "Man City", "Liverpool", "Arsenal", "Chelsea", "Spurs", "Newcastle", "Aston Villa", "Brighton", "West Ham", "Wolves", "Fulham", "Bournemouth", "Crystal Palace", "Brentford", "Everton", "Nottm Forest", "Ipswich Town", "Southampton", "Leicester City"]
 
             if user_role in ALLOWED_MOTM:
                 if st.button("🏆 MoTM"):
